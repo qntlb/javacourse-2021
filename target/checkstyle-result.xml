@@ -6,30 +6,13 @@
 <file name="/Users/andreamazzon/eclipse-repository/javacourse-2021/src/main/java/com/andreamazzon/session2/power/Power.java">
 <error line="16" column="16" severity="error" message="Variable &apos;result&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
 </file>
-<file name="/Users/andreamazzon/eclipse-repository/javacourse-2021/src/main/java/com/andreamazzon/session2/bicycles/Bicycle.java">
-<error line="1" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
-<error line="13" column="23" severity="error" message="Variable &apos;costSum&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
-<error line="14" column="13" severity="error" message="Variable &apos;gearsNumber&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
-<error line="15" column="16" severity="error" message="Variable &apos;color&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
-<error line="16" column="16" severity="error" message="Variable &apos;cost&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
-</file>
-<file name="/Users/andreamazzon/eclipse-repository/javacourse-2021/src/main/java/com/andreamazzon/session2/bicycles/BicycleMain.java">
-</file>
-<file name="/Users/andreamazzon/eclipse-repository/javacourse-2021/src/main/java/com/andreamazzon/session2/calculator/CalculatorTest.java">
-<error line="1" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
-</file>
-<file name="/Users/andreamazzon/eclipse-repository/javacourse-2021/src/main/java/com/andreamazzon/session2/calculator/Calculator.java">
-<error line="12" column="16" severity="error" message="Variable &apos;number&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
-</file>
 <file name="/Users/andreamazzon/eclipse-repository/javacourse-2021/src/main/java/com/andreamazzon/session2/cosine/CosineOverload.java">
 <error line="1" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
 </file>
-<file name="/Users/andreamazzon/eclipse-repository/javacourse-2021/src/main/java/com/andreamazzon/session2/cosine/CosineTest.java">
-</file>
-<file name="/Users/andreamazzon/eclipse-repository/javacourse-2021/src/main/java/com/andreamazzon/session2/staticexample/Tested.java">
+<file name="/Users/andreamazzon/eclipse-repository/javacourse-2021/src/main/java/com/andreamazzon/session2/staticexample/StaticExample.java">
 <error line="1" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
-<error line="9" column="20" severity="error" message="Variable &apos;staticVariable&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
-<error line="10" column="13" severity="error" message="Variable &apos;nonStaticVariable&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
+<error line="10" column="20" severity="error" message="Variable &apos;staticField&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
+<error line="11" column="13" severity="error" message="Variable &apos;nonStaticField&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
 </file>
 <file name="/Users/andreamazzon/eclipse-repository/javacourse-2021/src/main/java/com/andreamazzon/session2/staticexample/StaticTest.java">
 </file>
@@ -37,17 +20,20 @@
 <error line="1" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
 <error line="13" column="16" severity="error" message="Variable &apos;messageToBePrinted&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
 </file>
-<file name="/Users/andreamazzon/eclipse-repository/javacourse-2021/src/main/java/com/andreamazzon/session2/oophelloworldwithconstructor/HelloWorldWithConstructor.java">
-</file>
-<file name="/Users/andreamazzon/eclipse-repository/javacourse-2021/src/main/java/com/andreamazzon/session2/thisleaves/Leaf.java">
+<file name="/Users/andreamazzon/eclipse-repository/javacourse-2021/src/main/java/com/andreamazzon/session2/divisions/CalculatorTest.java">
 <error line="1" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
-<error line="12" column="13" severity="error" message="Variable &apos;i&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
 </file>
-<file name="/Users/andreamazzon/eclipse-repository/javacourse-2021/src/main/java/com/andreamazzon/session2/thisleaves/Flower.java">
-<error line="11" column="13" severity="error" message="Variable &apos;petalCount&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
-<error line="12" column="16" severity="error" message="Variable &apos;s&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
+<file name="/Users/andreamazzon/eclipse-repository/javacourse-2021/src/main/java/com/andreamazzon/session2/divisions/Calculator.java">
+<error line="12" column="16" severity="error" message="Variable &apos;dividend&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
 </file>
-<file name="/Users/andreamazzon/eclipse-repository/javacourse-2021/src/main/java/com/andreamazzon/session2/thisleaves/MainLeaf.java">
+<file name="/Users/andreamazzon/eclipse-repository/javacourse-2021/src/main/java/com/andreamazzon/session2/mortgages/MortgagesMain.java">
+<error line="1" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+</file>
+<file name="/Users/andreamazzon/eclipse-repository/javacourse-2021/src/main/java/com/andreamazzon/session2/mortgages/Mortgage.java">
+<error line="16" column="23" severity="error" message="Variable &apos;loansSum&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
+<error line="19" column="16" severity="error" message="Variable &apos;name&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
+<error line="20" column="13" severity="error" message="Variable &apos;age&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
+<error line="21" column="16" severity="error" message="Variable &apos;amount&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
 </file>
 <file name="/Users/andreamazzon/eclipse-repository/javacourse-2021/src/main/java/com/andreamazzon/session2/bankaccount/RiskFreeSavingMain.java">
 <error line="1" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
@@ -59,8 +45,6 @@
 <file name="/Users/andreamazzon/eclipse-repository/javacourse-2021/src/main/java/com/andreamazzon/session2/oophelloworldwithoverloading/MessageWithOverloading.java">
 <error line="1" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
 <error line="16" column="16" severity="error" message="Variable &apos;messageToBePrinted&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
-</file>
-<file name="/Users/andreamazzon/eclipse-repository/javacourse-2021/src/main/java/com/andreamazzon/session2/oophelloworldwithoverloading/HelloWorldWithOverloading.java">
 </file>
 <file name="/Users/andreamazzon/eclipse-repository/javacourse-2021/src/main/java/com/andreamazzon/session2/divisiblewithconstructor/MainDivisibleConstructor.java">
 <error line="1" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
@@ -74,12 +58,16 @@
 <error line="12" column="16" severity="error" message="Variable &apos;height&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
 </file>
 <file name="/Users/andreamazzon/eclipse-repository/javacourse-2021/src/main/java/com/andreamazzon/session2/treesconstructor/TreeMain.java">
-<error line="11" column="16" severity="error" message="&apos;public&apos; modifier out of order with the JLS suggestions." source="com.puppycrawl.tools.checkstyle.checks.modifier.ModifierOrderCheck"/>
+</file>
+<file name="/Users/andreamazzon/eclipse-repository/javacourse-2021/src/main/java/com/andreamazzon/session2/bankaccountwiththis/RiskFreeSavingWithThis.java">
+<error line="1" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="17" column="16" severity="error" message="Variable &apos;annualRiskFreeRate&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
+<error line="18" column="16" severity="error" message="Variable &apos;commission&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
+</file>
+<file name="/Users/andreamazzon/eclipse-repository/javacourse-2021/src/main/java/com/andreamazzon/session2/bankaccountwiththis/RiskFreeSavingWithThisMain.java">
 </file>
 <file name="/Users/andreamazzon/eclipse-repository/javacourse-2021/src/main/java/com/andreamazzon/session2/triangleperimeter/PerimeterCalculator.java">
 <error line="1" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
-</file>
-<file name="/Users/andreamazzon/eclipse-repository/javacourse-2021/src/main/java/com/andreamazzon/session2/triangleperimeter/PerimeterMain.java">
 </file>
 <file name="/Users/andreamazzon/eclipse-repository/javacourse-2021/src/main/java/com/andreamazzon/session1/helloworld/HelloWorld.java">
 <error line="1" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
@@ -87,8 +75,6 @@
 <file name="/Users/andreamazzon/eclipse-repository/javacourse-2021/src/main/java/com/andreamazzon/session1/tank/Tank.java">
 <error line="1" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
 <error line="9" column="13" severity="error" message="Variable &apos;level&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
-</file>
-<file name="/Users/andreamazzon/eclipse-repository/javacourse-2021/src/main/java/com/andreamazzon/session1/tank/Assignments.java">
 </file>
 <file name="/Users/andreamazzon/eclipse-repository/javacourse-2021/src/main/java/com/andreamazzon/session1/switches/ARandomSwitch.java">
 <error line="1" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
@@ -99,26 +85,17 @@
 <file name="/Users/andreamazzon/eclipse-repository/javacourse-2021/src/main/java/com/andreamazzon/session1/primenumbers/PrimesCheck.java">
 <error line="1" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
 </file>
-<file name="/Users/andreamazzon/eclipse-repository/javacourse-2021/src/main/java/com/andreamazzon/session1/primenumbers/Primes.java">
-</file>
 <file name="/Users/andreamazzon/eclipse-repository/javacourse-2021/src/main/java/com/andreamazzon/session1/oopdivisible/CheckDivisible.java">
 <error line="1" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
 <error line="11" column="13" severity="error" message="Variable &apos;dividend&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
 <error line="12" column="13" severity="error" message="Variable &apos;divisor&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
 </file>
-<file name="/Users/andreamazzon/eclipse-repository/javacourse-2021/src/main/java/com/andreamazzon/session1/oopdivisible/MainDivisible.java">
-</file>
 <file name="/Users/andreamazzon/eclipse-repository/javacourse-2021/src/main/java/com/andreamazzon/session1/oophelloworld/Message.java">
 <error line="1" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
 <error line="12" column="16" severity="error" message="Variable &apos;messageToBePrinted&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
 </file>
-<file name="/Users/andreamazzon/eclipse-repository/javacourse-2021/src/main/java/com/andreamazzon/session1/oophelloworld/OopHelloWorld.java">
-</file>
 <file name="/Users/andreamazzon/eclipse-repository/javacourse-2021/src/main/java/com/andreamazzon/session1/gauss/GaussFormula.java">
 <error line="1" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
-<error line="11" column="45" severity="error" message="Array brackets at illegal position." source="com.puppycrawl.tools.checkstyle.checks.ArrayTypeStyleCheck"/>
-</file>
-<file name="/Users/andreamazzon/eclipse-repository/javacourse-2021/src/main/java/com/andreamazzon/session1/gauss/SumOfIntegers.java">
 </file>
 <file name="/Users/andreamazzon/eclipse-repository/javacourse-2021/src/main/java/com/andreamazzon/session1/randomvariable/WhileRandom.java">
 <error line="1" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
@@ -132,7 +109,5 @@
 <file name="/Users/andreamazzon/eclipse-repository/javacourse-2021/src/main/java/com/andreamazzon/session1/testval/Comparison.java">
 <error line="1" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
 <error line="23" column="17" severity="error" message="Conditional logic can be removed." source="com.puppycrawl.tools.checkstyle.checks.coding.SimplifyBooleanReturnCheck"/>
-</file>
-<file name="/Users/andreamazzon/eclipse-repository/javacourse-2021/src/main/java/com/andreamazzon/session1/testval/Testing.java">
 </file>
 </checkstyle>

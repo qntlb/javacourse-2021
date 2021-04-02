@@ -28,8 +28,10 @@ public class Comparison {
 			 */
 			return false;
 		} else {
-			// since the method returns a boolean, you must have a return statement in both
-			// cases
+			/*
+			 * since the method returns a boolean, you must have a return statement in both
+			 * cases
+			 */
 			return true;
 		}
 	}
