@@ -36,7 +36,10 @@ public class Comparison {
 		}
 	}
 
-	// Another way to do it:
+	/*
+	 * Another way to do it: indeed, having an if/else statement above did not make
+	 * a lot of sense
+	 */
 	/**
 	 * The method evaluates if a number is inside an interval
 	 *
