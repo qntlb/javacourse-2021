@@ -10,7 +10,7 @@ package com.andreamazzon.session2.oophelloworldwithconstructor;
  */
 public class MessageWithConstructor {
 
-	String messageToBePrinted = "Hello!";
+	String messageToBePrinted = "Standard message: it can be modified";
 
 	// default constructor, because it has no arguments. Note: no return type
 	// (different from void!)
@@ -25,7 +25,7 @@ public class MessageWithConstructor {
 	 * this case no argument)
 	 */
 	void printMessage() {// this method prints the message contained in the string messageToBePrinted of
-							// the object
+		// the object
 		System.out.println(messageToBePrinted);
 	}
 

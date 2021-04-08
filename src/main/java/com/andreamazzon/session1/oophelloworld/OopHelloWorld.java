@@ -15,13 +15,18 @@ public class OopHelloWorld {
 		 * particular method called constructor. More about this tomorrow
 		 */
 		Message myMessage = new Message();
+
 		myMessage.printMessage(); // see how a method is called
+
 		Message myOtherMessage = new Message();
 
 		myMessage.messageToBePrinted = "Good evening";// see how a field of an object is manipulated
-		myMessage.printMessage(); // see how a method is called
 
-		System.out.println("Hi world! " + myMessage.messageToBePrinted); // see how a field of an object is accessed
+		myMessage.printMessage(); // see how a method is called
+		myOtherMessage.printMessage();
+
+		System.out.println("Hi world! " + myMessage.messageToBePrinted); // see how a
+		// field of an object is accessed
 
 		// we do the same with the other object
 		myOtherMessage.messageToBePrinted = "Hallo";
@@ -36,7 +41,10 @@ public class OopHelloWorld {
 		 * not always, anyway: we will see how to treat methods whose output does no
 		 * depend on the object calling them
 		 */
-		myMessage.printMessageWithArgument("Goodbye");
-		myOtherMessage.printMessageWithArgument("Goodbye");
+		String firstMessage = "Goodbye";
+		String secondMessage = "Bye bye";
+
+		myMessage.printMessageWithArgument(firstMessage);
+		myOtherMessage.printMessageWithArgument(firstMessage);
 	}
 }

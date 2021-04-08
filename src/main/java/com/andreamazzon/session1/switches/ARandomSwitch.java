@@ -23,7 +23,7 @@ public class ARandomSwitch {
 		case 0:
 			System.out.println("The selected number is " + 0);
 			break; // the break causes execution to jump to the end of the switch body.
-		// eliminate breaks: see what happens
+			// eliminate breaks: see what happens
 
 		case 2:
 			System.out.println("The selected number is " + 2);

@@ -13,9 +13,9 @@ public class Comparison {
 	/**
 	 * The method evaluates if a number is inside an interval
 	 *
-	 * @param testvalue: number which has to be tested
-	 * @param begin:     left end of the interval
-	 * @param end:       right end of the interval
+	 * @param testedNumber: number which has to be tested
+	 * @param leftEnd:      left end of the interval
+	 * @param rightEnd:     right end of the interval
 	 * @return true if testval is inside the interval, false if not
 	 */
 	boolean /* boolean: the method returns a boolean (i.e., true or false) */ isInside(double testedNumber,
@@ -53,7 +53,8 @@ public class Comparison {
 		 * the operator "!" applied to a boolean returns the opposite of its value:
 		 * false if the value of the boolean is true and true if it is false
 		 */
-		return !(testedNumber < leftEnd || testedNumber > rightEnd);
+		return (testedNumber >= leftEnd & testedNumber <= rightEnd);
+		// return !(testedNumber < leftEnd || testedNumber > rightEnd);
 	}
 
 	/**
@@ -71,8 +72,7 @@ public class Comparison {
 		 * true and the value that we want the operator to return when the boolean is
 		 * false.
 		 */
-
-		int resultAsInteger = (testedNumber > leftEnd & testedNumber < rightEnd) ? 1 : 0;
+		int resultAsInteger = (testedNumber >= leftEnd & testedNumber <= rightEnd) ? 1 : 0;
 		return resultAsInteger;
 	}
 }

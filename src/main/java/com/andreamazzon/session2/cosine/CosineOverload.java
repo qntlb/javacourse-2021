@@ -20,7 +20,8 @@ public class CosineOverload {
 	double calculateCosine(double angle) {
 		if (angle % Math.PI != 0) { // the size of angle in radians is not a multiple of Pi
 			return Math.cos(angle); // standard computation
-		} else { // if the size of the angle is actually a multiple of Pi
+		} else { // if the size of the angle is actually a multiple of Pi: angle = n * Pi, n
+					// integer
 			int ratio = (int) (angle / Math.PI);// Downcasted! We know that it is an int because x % Math.PI = 0
 			return calculateCosine(ratio);// the overloaded method is called!
 			// Question: what does it happen if I did not downcast and made ratio a double?

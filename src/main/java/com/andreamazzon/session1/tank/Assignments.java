@@ -24,7 +24,7 @@ public class Assignments {
 		tank1 = tank2;// tank1 and tank2 point to the same object!
 		System.out.println("2: tank1.level: " + tank1.level + ", tank2.level: " + tank2.level);
 
-		tank1.level = 27;
+		tank2.level = 27;
 		// aliasing: changing the tank1 object appears to change tank2 as well
 		System.out.println("3: tank1.level: " + tank1.level + ", tank2.level: " + tank2.level);
 
@@ -40,8 +40,8 @@ public class Assignments {
 		 */
 		System.out.println("Is tank3 equal to tank2 ? " + (tank3 == tank2));// this is not true
 		System.out.println("Is the level of tank3 equal to the level of tank2 ? " + (tank3.level == tank2.level));// this
-																													// is
-																													// true
+		// is
+		// true
 
 	}
 

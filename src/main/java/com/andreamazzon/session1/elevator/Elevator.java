@@ -13,7 +13,7 @@ public class Elevator {
 			System.out.println("The elevator is at floor number " + floor);
 		}
 		System.out.println("The elevator is at ground level");
-
+		//		System.out.println(floor);
 		// you could also write:
 		int i = 10;
 		while (i > 0) {

@@ -16,7 +16,7 @@ public class SumOfIntegers {
 	public int sumUpToNumber(int lastNumber) {
 		int sum = 0;
 		System.out.println("Looping...");
-		for (int i = 0; i <= lastNumber; i++) {
+		for (int i = 1; i <= lastNumber; i++) {
 			System.out.print(i + " "); //We use print instead of println: We do not want line breaks!
 			sum += i; //sum = sum + i;
 		}

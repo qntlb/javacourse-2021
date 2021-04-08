@@ -8,9 +8,12 @@ package com.andreamazzon.session1.primenumbers;
 public class Primes {
 
 	public static void main(String[] args) {
-		int n = 19;
+		int n = 25;
+
 		PrimesCheck checker = new PrimesCheck();
+
 		boolean result = checker.checkIfPrime(n);
+
 		System.out.println("Is the number " + n + " prime? " + result);
 	}
 }

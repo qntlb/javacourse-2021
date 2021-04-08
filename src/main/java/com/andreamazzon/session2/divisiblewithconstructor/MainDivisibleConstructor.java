@@ -16,6 +16,10 @@ public class MainDivisibleConstructor {
 		//creation of a new object of type CheckDivisible, passing the two integers through the constructor.
 		CheckDivisibleWithConstructor checkDivisible = new CheckDivisibleWithConstructor(dividend, divisor);
 		checkDivisible.check(); //call of the method
+
+		CheckDivisibleWithConstructor secondCheckDivisible = new CheckDivisibleWithConstructor(1, 1);
+		secondCheckDivisible.check(); // call of the method
+
 	}
 
 

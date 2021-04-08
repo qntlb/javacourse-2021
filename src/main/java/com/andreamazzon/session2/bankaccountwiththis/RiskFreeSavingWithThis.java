@@ -28,6 +28,7 @@ public class RiskFreeSavingWithThis {
 		 * resolves the name clash (otherwise the local variable/parameter "shadows" the
 		 * field).
 		 */
+		System.out.println("The constructor with two arguments is called");
 		this.annualRiskFreeRate = annualRiskFreeRate;
 		this.commission = commission;
 	}
@@ -43,6 +44,7 @@ public class RiskFreeSavingWithThis {
 		 * instruction inside a constructor.
 		 */
 		this(annualRiskFreeRate, 0);
+		System.out.println("The constructior with one argument is called");
 	}
 
 	/**

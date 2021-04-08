@@ -40,8 +40,8 @@ public class Tree {
 	}
 
 	// default constructor, which in this case just do nothing.
-	// Tree() {
-	// }
+	Tree() {
+	}
 	/*
 	 * note that if don't define a default constructor: Java will not do it for us,
 	 * and if we call the default constructor in the main, we get an error.

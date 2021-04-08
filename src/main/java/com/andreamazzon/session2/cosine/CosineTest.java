@@ -16,7 +16,7 @@ public class CosineTest {
 
 		System.out.println();
 
-		double multipleOfPi = 6 * Math.PI;
+		double multipleOfPi = 7 * Math.PI;
 		/*
 		 * the method with argument double is first called. Anyway, it will call the
 		 * overloaded method with int argument (see the implementation)

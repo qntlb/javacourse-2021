@@ -10,6 +10,7 @@ package com.andreamazzon.session1.oophelloworld;
 public class Message {
 
 	String messageToBePrinted = "Standard message: it can be modified";
+
 	// or also:
 	// String messageToBePrinted = new String("Standard message: it can be
 	// modified");
@@ -20,7 +21,7 @@ public class Message {
 	 * this case no argument)
 	 */
 	void printMessage() {// this method prints the message contained in the string messageToBePrinted of
-							// the object
+		// the object
 		System.out.println(messageToBePrinted);
 	}
 
@@ -33,4 +34,5 @@ public class Message {
 	void printMessageWithArgument(String message) {
 		System.out.println(message);
 	}
+
 }

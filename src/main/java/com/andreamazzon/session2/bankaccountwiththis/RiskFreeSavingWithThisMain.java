@@ -22,6 +22,9 @@ public class RiskFreeSavingWithThisMain {
 
 		// one version of the constructor, where we give the commission
 		RiskFreeSavingWithThis savingWithCommission = new RiskFreeSavingWithThis(annualRiskFreeRate, commission);
+
+		System.out.println();
+
 		// the overloaded version, where we don't
 		RiskFreeSavingWithThis savingWithoutCommission = new RiskFreeSavingWithThis(annualRiskFreeRate);
 

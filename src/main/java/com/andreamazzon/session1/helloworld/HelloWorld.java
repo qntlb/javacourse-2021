@@ -9,7 +9,7 @@ package com.andreamazzon.session1.helloworld;//first line: package your file bel
 
 //note how a class is created: class keyword followed by the name. More about "public" in some time
 public class HelloWorld {// same name of the file! Otherwise the compiler would complain, because the
-							// class is public.
+	// class is public.
 	// class body between brackets
 
 	// public, static: we will see the meaning later on
@@ -18,7 +18,7 @@ public class HelloWorld {// same name of the file! Otherwise the compiler would 
 		// special Java feature: String can be initialized with quoted text.
 		String myString = "Hello world!";// we create a String reference and we initialize it
 		// or:
-		// String myString = new String("Hello world!"); //typical way to construct
+		// String myString2 = new String("Hello world!"); //typical way to construct
 		// objects: more about this later on
 
 		// it can also be done separately:

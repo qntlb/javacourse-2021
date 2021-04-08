@@ -13,7 +13,7 @@ public class Operators {
 		// note: type declaration, and then variable assignment, through the operator
 		// "=".
 		int a = 5; // Since it is a primitive, a will contain the actual value and not the
-					// reference to an object.
+		// reference to an object.
 		System.out.println("The value of a is " + a);
 		int b = a; // if you say a = b for primitives, then the contents of b are copied into a
 		System.out.println("The value of b is " + b);
@@ -36,10 +36,10 @@ public class Operators {
 		System.out.println("The difference between " + a + " and " + b + " is " + d);
 		int e = a * b;
 		System.out.println("The product of " + a + " and " + b + " is " + e);
-		int f = a / b; // result is 0,
+		double f = a / b; // result is 0
 		System.out.println("The ratio of " + a + " and " + b + " is not " + f + ";");
 		// Note: Integer division truncates, rather than rounds, the result.
-		double g = (double) a / b; // a gets "upcasted", i.e., it is considered to be a double.
+		double g = a / (double) b; // a gets "upcasted", i.e., it is considered to be a double.
 		// We will see more on the concept of "upcasting" in the next sessions
 		System.out.println("The ratio of " + a + "" + " and " + b + " is " + g);
 		int g1 = (int) g; // "downcasting"

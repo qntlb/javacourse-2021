@@ -9,7 +9,7 @@ public class Divisible {
 
 	public static void main(String[] args) {
 
-		int dividend = 13;
+		int dividend = 16;
 		int divisor = 4;
 
 		boolean statement = (dividend % divisor == 0);//the parenthesis are not necessary, but in this way is more readable

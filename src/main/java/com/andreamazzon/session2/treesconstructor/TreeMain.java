@@ -10,11 +10,14 @@ public class TreeMain {
 
 	public static void main(String[] args) {
 		double treeHeight = 3.2;
+
 		Tree myTree = new Tree(treeHeight); // call of the constructor with the double argument
+
 		myTree.printHeight();
-		// Tree mySecondTree = new Tree();
+
+		Tree mySecondTree = new Tree();
 		// try to see what happens if you now call
-		// mySecondTree.printHeight();
+		mySecondTree.printHeight();
 		/*
 		 * You see that height gets automatically initialized to zero as soon as the
 		 * object is created. If a primitive is a field in a class, on one hand it might

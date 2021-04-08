@@ -9,8 +9,10 @@ package com.andreamazzon.session1.testval;
 public class Testing {
 
 	public static void main(String[] args) {
+
 		Comparison test = new Comparison(); // we construct an object of type Comparison
-		double testedNumber = 1;
+
+		double testedNumber = 1.7;
 		double leftEnd = 2;
 		double rightEnd = 3;
 
@@ -18,6 +20,7 @@ public class Testing {
 				+ test.isInside(testedNumber, leftEnd, rightEnd)/* method called inside the println */);
 
 		int isInsideAsInt = test.isInsideAsInt(testedNumber, leftEnd, rightEnd);
-		System.out.println("The result of the test as an integer is: " + isInsideAsInt);
+		System.out.println(
+				"The result of the test as an integer is: " + test.isInsideAsInt(testedNumber, leftEnd, rightEnd));
 	}
 }
