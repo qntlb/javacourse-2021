@@ -23,7 +23,8 @@ public class Power {
 	 * @param exponent
 	 */
 	void computeAndPrintPower(double base, int exponent) {
-		// your code here
+		result = Math.pow(base, exponent);// note: Java method
+		System.out.println("Computing " + base + " to the power of " + exponent + ". The result is " + result);
 	}
 
 	/**
@@ -34,6 +35,13 @@ public class Power {
 	 * @param exponent
 	 */
 	void computeAndPrintPower(double base, double exponent) {
-		// your code here
-	}
+		// we distinguish the two cases
+		if (base >= 0 || exponent == Math.floor(exponent)) {
+			result = Math.pow(base, exponent);
+			System.out.println("Computing " + base + " to the power of " + exponent + ". The result is " + result);
+		} else {
+			// we warn the user!
+			System.out.println("Computing " + base + " to the power of " + exponent
+					+ ". You get a complex numer: is that what you want?");
+		}	}
 }
