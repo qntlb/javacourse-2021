@@ -1,4 +1,4 @@
-package com.andreamazzon.session3.encapsulation.traveltime;
+package com.andreamazzon.session3.encapsulation.travelspeed;
 
 /**
  * This class illustrates an example of encapsulation.
