@@ -47,6 +47,7 @@ public class ComplexClient {
 		print("and ");
 		newComplexNumber.show();
 		print( " is ");
+		//another way to do that: multiple calls
 		complexNumber.sum(newComplexNumber).showWithNewLine();
 
 
