@@ -1,4 +1,4 @@
-package com.andreamazzon.session3.lazyinitialization;
+package com.andreamazzon.session3.encapsulation.lazyinitialization;
 
 import static com.andreamazzon.session3.useful.Print.printn;
 

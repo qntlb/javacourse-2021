@@ -1,4 +1,4 @@
-package com.andreamazzon.session3.lazyinitialization;
+package com.andreamazzon.session3.encapsulation.lazyinitialization;
 
 /**
  * This class generates pseudo random numbers through a linear congruential
