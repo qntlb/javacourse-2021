@@ -15,7 +15,7 @@ import static com.andreamazzon.session3.useful.Print.printn;
 public class AccessTest {
 	public static void main(String[] args) {
 		
-		Access access =new Access();
+		Access access = new Access();
 		
 		access.publicField = 1;//fine, this field is public: it can be accessed from anywhere
 		access.packageAccessField = 2;//fine, this field has no access modifier: it can be accessed from inside the package
@@ -30,7 +30,7 @@ public class AccessTest {
 		printn("The public asset field is " + access.publicField);
 		//printn("The private asset field is " + access.privateField); //private field not visible
 		
-		PackageAccessOnly packageAccessOnly= new PackageAccessOnly();//the package access class can be created
+		PackageAccessOnly packageAccessOnly = new PackageAccessOnly();//the package access class can be created
 		/*
 		 * but look what happens when we try to construct objects of this class from
 		 * com.andreamazzon.session3.otherpackage.AccessTestOutside

@@ -120,19 +120,15 @@ public class Client {
 		return this;
 	}
 
-	/*
-	 * this will be the last method to be called: it calls the constructor (so that
-	 * we have to write it just once, caring that we don't do mistakes) to return
-	 * the reference to a new object of type Client.
-	 */
-	Client build() {
-		return new Client(id, name, advisor, nationality, cityOfResidence, age, riskAversionIndex, sumInvested,
-				hasInsurance);
-	}
 
 	// we write this method just to check that ervything is fine.
 	void printName() {
 		System.out.println(name);
 	}
+	
+	// we write this method just to check that ervything is fine.
+	void printNationality() {
+			System.out.println(nationality);
+		}
 
 }

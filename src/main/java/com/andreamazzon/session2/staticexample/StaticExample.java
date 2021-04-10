@@ -16,8 +16,8 @@ public class StaticExample {
 
 	static void staticModifier() {  //static method
 		staticField++;
-		// printFields(); //Error: static method cannot reference non static methods!!
-		// nonStaticField++; //Error: static method cannot reference non static
+		//printFields(); //Error: static method cannot reference non static methods!!
+		//nonStaticField++; //Error: static method cannot reference non static
 		// variables!!
 	}
 

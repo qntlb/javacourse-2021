@@ -44,7 +44,7 @@ public class RiskFreeSavingWithThis {
 		 * instruction inside a constructor.
 		 */
 		this(annualRiskFreeRate, 0);
-		System.out.println("The constructior with one argument is called");
+		System.out.println("The constructor with one argument is called");
 	}
 
 	/**

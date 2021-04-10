@@ -14,5 +14,7 @@ public class PrivateTest{
 		PrivateConstructorClass firstObject= PrivateConstructorClass.CreateOneObject();
 		//this second object does not get created
 		PrivateConstructorClass secondObject= PrivateConstructorClass.CreateOneObject();
+		PrivateConstructorClass thirdObject= PrivateConstructorClass.CreateOneObject();
+
 	}
 }

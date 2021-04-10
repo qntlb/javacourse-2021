@@ -17,7 +17,8 @@ import static com.andreamazzon.session3.useful.Print.printn;
 public class PrivateConstructorClass{
 
 	// This field is static: it must be accessed from the static method CreateOneObject()
-	static int howManyObjects = 0;
+	private static int howManyObjects = 0;
+	
 	private PrivateConstructorClass(){ //private constructor
 		printn("This class has a private constructor. Number of objects created: " + howManyObjects);
 	};
@@ -28,12 +29,13 @@ public class PrivateConstructorClass{
 	 * not the data stored in the object
 	 */
 	public static PrivateConstructorClass CreateOneObject() {
-		if (howManyObjects < 1) {
+		if (howManyObjects < 2) {
 			howManyObjects ++;
 			PrivateConstructorClass newObject = new PrivateConstructorClass();
 			//the constructor can of course be accessed from inside the class
 			return newObject;
 		}
+		printn("No more objects!");
 		//you have to place a return, otherwise the compilator complains
 		return null; //no need for else: if howManyObjects = 0, returns immediately exit the method
 	}

@@ -24,5 +24,7 @@ import com.andreamazzon.session3.useful.Print;
 public class SimplerPrinterExample {
 	public static void main(String[] args) {
 		Print.printn("Printing is now much simpler");
+		Print.printn();
+		Print.print("Printing is now much simpler");
 	}
 }

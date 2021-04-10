@@ -13,7 +13,7 @@ import java.util.Random;
 public class ArrayRandom {
 	public static void main(String[] args){
 
-		Random rand=new Random(); //random numbers generator
+		Random rand = new Random(); //random numbers generator
 
 		int length = rand.nextInt(20); //(pseudo)random integer between 0 and 19
 
@@ -37,7 +37,7 @@ public class ArrayRandom {
 		// length field of an array! Of course an array is an object
 		System.out.println("The length of the array a is "+ a.length);
 
-		for(int i=0; i < a.length; i++) { //note: int i=0; i<a.length: the first element is a[0]
+		for(int i = 0; i < a.length; i++) { //note: int i=0; i<a.length: the first element is a[0]
 			//you cannot go out of bounds: you would get a runtime error
 			a[i] = rand.nextInt(500);  //(pseudo)random integer between 0 and 499
 		}
@@ -45,6 +45,7 @@ public class ArrayRandom {
 		System.out.println("The array a is now " + Arrays.toString(a));
 
 		int[] b;// Creation of the array reference
+		
 		b = new int[10];//.and then initialization
 
 		int[] c = {1, 2, 3, 4, 5, 6, 7};//another way to initialize an array

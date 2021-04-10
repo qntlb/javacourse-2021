@@ -13,7 +13,7 @@ package com.andreamazzon.session2.mortgages;
  */
 public class Mortgage {
 
-	static double loansSum = 0; // static: shared by all the objects. First equal to zero, for the first object.
+	double loansSum = 0; // static: shared by all the objects. First equal to zero, for the first object.
 	// this field is not meant to be static: it is must be able to vary for every
 	// customer
 	String name;

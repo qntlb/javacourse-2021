@@ -42,6 +42,6 @@ public class Power {
 		} else {
 			// we warn the user!
 			System.out.println("Computing " + base + " to the power of " + exponent
-					+ ". You get a complex numer: is that what you want?");
+					+ ". You get a complex number: is that what you want?");
 		}	}
 }

@@ -25,7 +25,8 @@ public class ClientConstruct {
 				.hasInsurance(true);
 
 		cristiano.printName();
-
+		cristiano.printNationality();
+		
 	}
 
 }

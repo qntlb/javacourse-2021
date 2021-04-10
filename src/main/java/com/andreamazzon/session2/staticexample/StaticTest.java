@@ -54,8 +54,8 @@ public class StaticTest {
 		 * You can also modify static fields, or call methods from direct object calls,
 		 * but this is bad practice
 		 */
-		//		System.out.println("\n");
-		//		firstObject.staticField = 10;
-		//		secondObject.printFields();
+		System.out.println("\n");
+		firstObject.staticField = 10;
+		secondObject.printFields();
 	}
 }

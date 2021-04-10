@@ -8,7 +8,7 @@ import static com.andreamazzon.session3.useful.Print.printn;
 import static java.lang.Math.sqrt;
 
 import java.util.Vector;
-//try to comment it out: it returns an error becuase of a conflict
+//try to uncomment it: it returns an error because of a conflict
 //import com.andreamazzon.session3.useful.Vector;
 
 /**

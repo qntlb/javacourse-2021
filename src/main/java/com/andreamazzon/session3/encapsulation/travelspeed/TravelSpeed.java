@@ -62,7 +62,7 @@ public class TravelSpeed {
 	 */
 	public void setDistance(double distance) {
 		// the client sets the distance in km, but we have to convert it in miles
-		distance = kmToMiles(distance);
+		this.distance = kmToMiles(distance);
 	}
 
 	/**

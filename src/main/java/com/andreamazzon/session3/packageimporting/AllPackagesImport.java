@@ -26,7 +26,7 @@ public class AllPackagesImport {
 		 * I can use this class because I imported all the classes in
 		 * com.andreamazzon.session3.useful.*
 		 */
-		Print.printn("A simpler way to print");
+		//Print.printn("A simpler way to print");
 		/*
 		 * I can construct an object of this class because I imported all the classes in
 		 * com.andreamazzon.session3.useful.*

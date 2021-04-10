@@ -63,7 +63,12 @@ public class LinearCongruentialGenerator {
 			long congruence = (a * randomNumbers[indexOfInteger] + c) % modulus;
 			// congruence > -modulus
 			if (congruence < 0) {
-				congruence += modulus;// otherwise we would get a negative number, because of possible overflows
+				/* 
+				 * Due to possible overflows, we can get negative numbers (more in the lecture..).
+				 * For now, we fix the problem adding modulus. This is not the perfect solution, but more
+				 * will follow in the exercises..
+				 */
+				congruence += modulus;
 			}
 			randomNumbers[indexOfInteger + 1] = congruence;
 		}
