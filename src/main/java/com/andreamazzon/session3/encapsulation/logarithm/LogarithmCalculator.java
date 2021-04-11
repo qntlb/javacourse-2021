@@ -33,7 +33,7 @@ public class LogarithmCalculator {
 		if (number > 0) {// controls if the value is positive!
 			this.number = number; // note the use of this
 		} else {
-			Print.printn("This has to be a positive number");
+			Print.printn("This has to be a positive number!");
 		}
 	}
 
