@@ -56,7 +56,7 @@ public class Mortgage {
 			Mortgage newMortgage = new Mortgage(name, age, amount);
 			return newMortgage;
 		}
-		System.out.println("Enough!");
+		System.out.println("Enough objects! We have excedeed the budget");
 		loansSum -= amount;
 		//we have to return an object of type Mortgage, but we don't want to construct any! A solution is to return null
 		return null;
