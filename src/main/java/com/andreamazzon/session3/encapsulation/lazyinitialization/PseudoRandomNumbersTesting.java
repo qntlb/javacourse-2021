@@ -24,13 +24,15 @@ public class PseudoRandomNumbersTesting {
 		long[] sequenceGeneratedByTheFirstObject = firstGenerator.getRandomNumberSequence();
 
 		printn("Simulation of " + numberOfPseudoRandomNumbers + " integers with seed " + firstSeed
-				+ " using the Java specifications: " + Arrays.toString(sequenceGeneratedByTheFirstObject));
+				+ " : " + Arrays.toString(sequenceGeneratedByTheFirstObject));
 
 		printn();
 
 		printn("First four number of the random sequence, excluded the seed:");
-		// maybe the user is not interested to have all the sequence, but only in the
-		// first numbers
+		/*
+		 * maybe the user is not interested to have all the sequence, but only in the
+		 * first numbers
+		 */
 		for (int i = 0; i < numberOfPseudoRandomNumbers - 1; i++) {
 			printn(firstGenerator.getNextInteger());
 		}
@@ -45,6 +47,6 @@ public class PseudoRandomNumbersTesting {
 		long[] sequenceGeneratedByTheSecondObject = secondGenerator.getRandomNumberSequence();
 
 		printn("Simulation of " + numberOfPseudoRandomNumbers + " integers with seed " + secondSeed
-				+ " using the Java specifications: " + Arrays.toString(sequenceGeneratedByTheSecondObject));
+				+ " : " + Arrays.toString(sequenceGeneratedByTheSecondObject));
 	}
 }

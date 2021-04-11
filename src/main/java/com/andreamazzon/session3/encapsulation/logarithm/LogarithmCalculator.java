@@ -1,5 +1,7 @@
 package com.andreamazzon.session3.encapsulation.logarithm;
 
+import com.andreamazzon.session3.useful.Print;
+
 /**
  * This class illustrates an use of encapsulation, i.e., wrapping data and
  * methods within classes in combination with access control. In particular, its
@@ -19,8 +21,7 @@ public class LogarithmCalculator {
 
 	// getter
 	public double getNumber() {
-		// write your code here (replace the return 0)
-		return 0;
+		return number;
 	}
 
 	/*
@@ -29,7 +30,11 @@ public class LogarithmCalculator {
 	 *
 	 */
 	public void setNumber(double number) {
-		// your code here
+		if (number > 0) {// controls if the value is positive!
+			this.number = number; // note the use of this
+		} else {
+			Print.printn("This has to be a positive number");
+		}
 	}
 
 	// method that computes the logarithm
