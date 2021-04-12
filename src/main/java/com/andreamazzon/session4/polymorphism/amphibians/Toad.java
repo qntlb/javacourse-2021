@@ -11,7 +11,7 @@ import static com.andreamazzon.session3.useful.Print.printn;
  */
 public class Toad extends Amphibian{
 
-	Toad(){
+	public Toad(){
 		printn("I am a toad");}
 
 	@Override
