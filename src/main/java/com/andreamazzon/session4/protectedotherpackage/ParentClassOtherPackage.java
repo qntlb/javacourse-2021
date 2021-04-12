@@ -15,7 +15,7 @@ public class ParentClassOtherPackage {
 	protected int i = 6;
 
 	protected void computeDouble() {
-		printn("A protected method in the another package. You can call it when you inherit");
+		printn("A protected method in the another package. You can call from methods of classes that inherit from this class");
 		i *= 2;
 	}
 
