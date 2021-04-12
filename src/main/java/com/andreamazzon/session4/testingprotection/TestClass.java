@@ -26,6 +26,8 @@ public class TestClass {
 		printn("The value of the protected field of the class in the same package is " + protectedSamePackage.j);
 		protectedSamePackage.computeDouble(); // You can access it because protectedClass is in the same package
 		printn("And now is " + protectedSamePackage.j);
+		
+		printn();
 
 		/*
 		 * protected fields and methods can be accessed in other packages when they are
@@ -36,7 +38,7 @@ public class TestClass {
 		print("The value of the field that the derived class inherits from the base one is  ");
 		derived.printField();
 		derived.computeSinOfDouble();
-		print("And now  ");
+		print("The value of i is now  ");
 		derived.printField();
 	}
 

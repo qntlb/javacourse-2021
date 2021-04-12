@@ -43,7 +43,7 @@ public class DerivedClass extends ParentClassOtherPackage {
 		 * make it with just package access. You see hat now you get an error here.
 		 */
 		computeDouble();
-		printn(Math.sin(i));
+		printn("The sin of 2i is " + Math.sin(i));
 	}
 
 	/**
