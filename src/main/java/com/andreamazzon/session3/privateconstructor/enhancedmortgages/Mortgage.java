@@ -13,12 +13,12 @@ package com.andreamazzon.session3.privateconstructor.enhancedmortgages;
  */
 public class Mortgage {
 
-	static double loansSum = 0; // static: shared by all the objects. First equal to zero, for the first object.
-	static double budget = 1E6;
+	private static double loansSum = 0; // static: shared by all the objects. First equal to zero, for the first object.
+	private static double budget = 1E6;
 	// this field is not meant to be static: it is must be able to vary for every customer
-	String name;
-	int age; // non static, for the same reason
-	double amount; // same thing
+	private String name;
+	private int age; // non static, for the same reason
+	private double amount; // same thing
 
 	//constructor
 	private Mortgage(String name, int age, double amount) {
