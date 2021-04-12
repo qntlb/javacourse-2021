@@ -24,4 +24,9 @@ public class ModernGoalKeeper extends GoalKeeper {
 		save();
 		printn("I make a good pass for my mitfielder");
 	}	
+	
+	@Override
+	protected void save() {
+		printn("Save as a modern goalkeeper"); 
+	}
 }

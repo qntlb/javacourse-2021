@@ -14,6 +14,7 @@ public class GoalKeeper {
 	
 	GoalKeeper() { //constructor: it will be called by the constructor of the derived class
 		printn("My task is to prevent the opponent to score");
+		//isModern = false;
 	}
 
 	//this method will be inherited from the derived class
