@@ -21,7 +21,7 @@ public class RandomShapeGenerator {
 	private Random rand = new Random();//random number generator
 
 
-	RandomShapeGenerator(double basisOfTriangle, double heightOfTriangle, double sideOFSquare,
+	public RandomShapeGenerator(double basisOfTriangle, double heightOfTriangle, double sideOFSquare,
 			double radiusOfCircle) {
 		this.basisOfTriangle = basisOfTriangle;
 		this.heightOfTriangle = heightOfTriangle;
@@ -29,7 +29,7 @@ public class RandomShapeGenerator {
 		this.radiusOfCircle = radiusOfCircle;
 	}
 
-	Shape nextShape() { // Upcasting in the return type
+	public Shape nextShape() { // Upcasting in the return type
 		switch (rand.nextInt(3)) {//0,1 or 2
 		/*
 		 * note that for any case it does not execute the instruction that follows even if there is
