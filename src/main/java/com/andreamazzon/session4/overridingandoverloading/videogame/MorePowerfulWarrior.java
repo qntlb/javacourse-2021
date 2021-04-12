@@ -16,7 +16,7 @@ public class MorePowerfulWarrior extends Warrior {
 	private final static double impactOnBuildings = 5;//new field!
 
 
-	MorePowerfulWarrior(){
+	public MorePowerfulWarrior(){
 		System.out.println("A more powerful one");//constructor of the derived class. We don't call the super one.
 	}
 

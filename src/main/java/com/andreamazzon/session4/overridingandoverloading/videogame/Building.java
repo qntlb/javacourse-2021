@@ -14,7 +14,7 @@ public class Building {
 	 */
 	private double solidityPoints = 1000;//initial value of the health points.
 
-	Building(){
+	public Building(){
 		System.out.println("New building created");
 	}
 	

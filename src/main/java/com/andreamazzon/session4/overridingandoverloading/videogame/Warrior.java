@@ -25,7 +25,7 @@ public class Warrior {
 	 */
 	private double healthPoints = 1000;
 
-	Warrior(){
+	public Warrior(){
 		System.out.println("New warrior created");//constructor
 	}
 	
