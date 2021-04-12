@@ -15,7 +15,7 @@ import com.andreamazzon.session4.protectedotherpackage.ParentClassOtherPackage;
  */
 public class DerivedClass extends ParentClassOtherPackage {
 
-	DerivedClass(int i) {
+	public DerivedClass(int i) {
 		/*
 		 * i gets inherited from the base class: it is defined in the base class.
 		 * However, its value can be set from outside the package of the class where it
@@ -25,11 +25,17 @@ public class DerivedClass extends ParentClassOtherPackage {
 		this.i = i;
 	}
 
-	void printField() {
+	/**
+	 * It computes and prints the value of the fields i 
+	 */
+	public void printField() {
 		printn(i);// i here is a field of the base class!
 	}
 
-	void computeSinOfDouble() {
+	/**
+	 * It computes and prints the value of the sin of 2i 
+	 */
+	public void computeSinOfDouble() {
 		/*
 		 * computeDouble() gets inherited from the base class: it is defined in the base
 		 * class. However, it can be called from outside the package of the class where
@@ -40,8 +46,12 @@ public class DerivedClass extends ParentClassOtherPackage {
 		printn(Math.sin(i));
 	}
 
-	void computeSinOfHalf() {
+	/**
+	 * It computes and prints the value of sin(i/2)
+	 */
+	public void computeSinOfHalf() {
 		// you can't call makeHalf() because it is not protected!
 		// computeHalf();
+		//printn(Math.sin(i));
 	}
 }
