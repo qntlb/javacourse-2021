@@ -13,9 +13,9 @@ public class TestClass {
 		double initialValue = 100;
 		double increaseIfUp = 2;
 		double decreaseIfDown = 0.5;
-		double interestRate = 0;
+		double interestRate = 0.2;
 
-		int seed = 1897;
+		int seed = 10;
 		int lastTime = 10;
 		int numberOfSimulations = 1000000;
 		int simulationIndex = 10;
@@ -29,6 +29,10 @@ public class TestClass {
 		double finalAverage = tester.getAverageAtGiveTime(lastTime);
 
 		System.out.println("Average of the process at time " + lastTime + ": " + finalAverage);
+
+		double discountFactor = Math.pow(1+interestRate, -lastTime);
+		double discountedAverage = discountFactor * finalAverage;
+		System.out.println("Average of the process at time " + lastTime + ": " + discountedAverage);
 
 	}
 }
