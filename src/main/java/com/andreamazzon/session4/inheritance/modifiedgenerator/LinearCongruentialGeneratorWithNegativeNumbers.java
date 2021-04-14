@@ -6,8 +6,11 @@ import com.andreamazzon.session3.encapsulation.lazyinitialization.LinearCongruen
  * This class generates pseudo random integers by a linear congruential generator. The difference with
  * LinearCongruentialGenerator is indeed that here we also accept negative numbers. Thus we make this
  * class inherit from LinearCongruentialGenerator, just overriding one method, subtracting modulus from
- * the numbers generated in the method of the parent class. Note that, moreover, we have not to modify
- * any access modifier of the parent class. It inherits all the other public methods.
+ * the numbers generated in the method of the parent class. Note that we override the method
+ * getRandomNumberSequence() first calling the version of the parent class, and then modifying its output.
+ * The call of the version of the parent class is done by super.nameOfTheMethod. 
+ * Also note that we don't have not to modify any access modifier of the parent class. It inherits all the
+ * other public methods.
  *
  * @author Andrea Mazzon
  *
@@ -28,7 +31,8 @@ public class LinearCongruentialGeneratorWithNegativeNumbers extends LinearCongru
 	 */
 	@Override
 	public long[] getRandomNumberSequence() {
-		long[] sequence = super.getRandomNumberSequence();
+		
+		long[] sequence = super.getRandomNumberSequence();//in this way I call the not overloaded method!
 		if (flag == 0) { //it has to be done just once
 			for (int indexOfInteger = 0; indexOfInteger < getNumberOfPseudoRandomNumbers(); indexOfInteger++) {
 				sequence[indexOfInteger] -= getModulus()/2;
