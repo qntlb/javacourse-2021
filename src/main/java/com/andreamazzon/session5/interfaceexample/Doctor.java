@@ -1,19 +1,19 @@
 package com.andreamazzon.session5.interfaceexample;
 
 /**
- * This class implements the interface Cure, as it gives an implementation to the two methods defined
- * in Cure.
+ * This class implements the interface Cure, as it gives an implementation to
+ * the two methods defined in Cure.
  *
  * @author Andrea Mazzon
  *
  */
 public class Doctor implements Cure {
 	/*
-	 * Note that you have to declare the method to be public. Methods of interfaces are implicitly public,
-	 * so you can avoid to specify it when you define the interface. However, you have to declare them
-	 * to be public in the classes implementing the interface.
-	 * Also note the @Override annotation: this is just as if you override an abstract method of an abstract
-	 * class.
+	 * Note that you have to declare the method to be public. Methods of interfaces
+	 * are implicitly public, so you can avoid to specify it when you define the
+	 * interface. However, you have to declare them to be public in the classes
+	 * implementing the interface. Also note the @Override annotation: this is just
+	 * as if you override an abstract method of an abstract class.
 	 */
 	@Override
 	public void diagnose() {
@@ -25,9 +25,8 @@ public class Doctor implements Cure {
 		System.out.println("Take some aspirines!");
 	}
 
-	//however, it can also have some own methods:
+	// however, it can also have some own methods:
 	public void aDoctorMethod() {
 		System.out.println("Speak to the patient");
 	}
 }
-

@@ -9,9 +9,9 @@ import com.andreamazzon.session3.encapsulation.lazyinitialization.LinearCongruen
  * probability p_2, M(i)=d<1 with probability 1-p_1-p_2. This is done under a
  * risk neutral measure: it can be seen that the market is not complete, i.e.,
  * infinitely many risk neutral measures exist, with condition p_1 = (1 + r - d
- * - p_2 * (1 - d)) / (u - d) where r is the risk free interest rate. 
- * This serves as an example of composition combined to inheritance: the class
- * has an object of type LinearCongruentialGenerator, which is used to generate the
+ * - p_2 * (1 - d)) / (u - d) where r is the risk free interest rate. This
+ * serves as an example of composition combined to inheritance: the class has an
+ * object of type LinearCongruentialGenerator, which is used to generate the
  * realizations M(i), and inherits from the abstract class
  * StochasticProcessSimulator, where the implementation of getRealizations() is
  * given. The realizations of a row are realizations of a random variable. We
@@ -27,13 +27,15 @@ public class TrinomialModelSimulator extends StochasticProcessSimulator {
 	private double increaseIfUp; // this is u>1
 	private double decreaseIfDown; // this is d<1
 	private double riskNeutralProbabilityUp;
-	// it is (1 + interestRate - decreaseIfDown - probabilityStayTheSame * (1 -
-	// decreaseIfDown))/(increaseIfUp - decreaseIfDown)
+	/*
+	 * it is (1 + interestRate - decreaseIfDown - probabilityStayTheSame * (1 -
+	 * decreaseIfDown))/(increaseIfUp - decreaseIfDown)
+	 */
 	private double probabilityStayTheSame; // probability that S(i+1) = S(i)
 	private double[][] movements; // the matrix of realizations of M
 
-	private LinearCongruentialGenerator randomGenerator; // composition! We will use this object to simulate the values
-															// of M
+	// composition! We will use this object to simulate the values of M
+	private LinearCongruentialGenerator randomGenerator;
 
 	public TrinomialModelSimulator(double initialValue, double increaseIfUp, double decreaseIfDown, double interestRate,
 			double probabilityStayTheSame, int seed, int lastTime, int numberOfSimulations) {
@@ -85,14 +87,13 @@ public class TrinomialModelSimulator extends StochasticProcessSimulator {
 	}
 
 	/*
-	 * Generation of the process of ups and downs, i.e., M such that 
-	 * S(i+1) = S(i)*M(i). 
-	 * We have upsAndDowns[i][j]=M(i,omega(j)). In particular,
+	 * Generation of the process of ups and downs, i.e., M such that S(i+1) =
+	 * S(i)*M(i). We have upsAndDowns[i][j]=M(i,omega(j)). In particular,
 	 * upsAndDowns[i][j] = u ifrandomGenerator.getNextInteger() < thresholdUp,
-	 * upsAndDowns[i][j] = 1 if thresholdUp <=randomGenerator.getNextInteger() <= thresholdDown, 
-	 * upsAndDowns[i][j] = d if randomGenerator.getNextInteger() > thresholdDown.
-	 * We ask randomGenerator to generate a sequence of random numbers whose length is
-	 * equal to finalTime*numerbOfSimulations.
+	 * upsAndDowns[i][j] = 1 if thresholdUp <=randomGenerator.getNextInteger() <=
+	 * thresholdDown, upsAndDowns[i][j] = d if randomGenerator.getNextInteger() >
+	 * thresholdDown. We ask randomGenerator to generate a sequence of random
+	 * numbers whose length is equal to finalTime*numerbOfSimulations.
 	 */
 	private double[][] generateMovements() {
 		// rows are simulation at given time, columns paths

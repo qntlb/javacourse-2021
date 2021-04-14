@@ -1,10 +1,10 @@
 package com.andreamazzon.session5.inheritinginterfaces;
 
 /**
- * This class MUST implement firstMethod(), secondMethod() (that InheritingInterface
- * has inherited from FirstInterface and SecondInterface) and thirdMethod(), which
- * is an own method of InheritingInterface. Moreover, it overrides (but is not forced to)
- * aClassMethod().
+ * This class MUST implement firstMethod(), secondMethod() (that
+ * InheritingInterface has inherited from FirstInterface and SecondInterface)
+ * and thirdMethod(), which is an own method of InheritingInterface. Moreover,
+ * it overrides (but is not forced to) aClassMethod().
  *
  * @author Andrea Mazzon
  */
@@ -29,5 +29,3 @@ public class InheritingAndImplementingClass extends FirstClass implements Inheri
 		System.out.println("Overriding of class method");
 	}
 }
-
-

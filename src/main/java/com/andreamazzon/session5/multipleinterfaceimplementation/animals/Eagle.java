@@ -8,11 +8,12 @@ package com.andreamazzon.session5.multipleinterfaceimplementation.animals;
  */
 public class Eagle implements AnimalThatFlies {
 	@Override
-	public void fly() {//methods defined in the interface have to be public!
+	public void fly() {// methods defined in the interface have to be public!
 		System.out.println("An eagle flies");
 	}
+
 	@Override
-	public void eat() {//methods defined in the interface have to be public!
+	public void eat() {// methods defined in the interface have to be public!
 		System.out.println("An eagle eats");
 	}
 }

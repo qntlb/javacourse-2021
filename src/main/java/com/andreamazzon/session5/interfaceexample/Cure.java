@@ -7,10 +7,10 @@ package com.andreamazzon.session5.interfaceexample;
  * @author Andrea Mazzon
  */
 public interface Cure {
-	int field = 10; //it is implicitly static and final (does not make sense here, just to show)
+	int field = 10; // it is implicitly static and final (does not make sense here, just to show)
 
-	//these methods are implicitly public
+	// these methods are implicitly public
 	void diagnose();
+
 	void heal();
 }
-

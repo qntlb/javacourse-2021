@@ -20,17 +20,17 @@ public class CurrencyTester {
 		System.out.println();
 
 		/*
-		 * let's have a look now at some specific, pre-implemented methods that an object of an enum
-		 * type can call
+		 * let's have a look now at some specific, pre-implemented methods that an
+		 * object of an enum type can call
 		 */
-		
-		//let's start from ordinal():
+
+		// let's start from ordinal():
 		System.out.println("The position of EURO is " + Currency.EURO.ordinal());
 		System.out.println();
 
 		/*
-		 * values() is a method of enum types that produces the array of all the values of the enum constant
-		 * We go through that array in the for loop.
+		 * values() is a method of enum types that produces the array of all the values
+		 * of the enum constant We go through that array in the for loop.
 		 */
 		Currency[] currencyValues = Currency.values();
 		for (Currency currency : currencyValues) {

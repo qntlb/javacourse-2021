@@ -1,8 +1,8 @@
 package com.andreamazzon.session5.inheritinginterfaces;
 
 /**
- * This class illustrates how to work with multiple inheritance of interfaces, and how polymorphism works
- * in this case.
+ * This class illustrates how to work with multiple inheritance of interfaces,
+ * and how polymorphism works in this case.
  *
  * @author Andrea Mazzon
  *
@@ -10,26 +10,27 @@ package com.andreamazzon.session5.inheritinginterfaces;
 public class MakingCalls {
 
 	/**
-	 * @param first, object of a class implementing FirstInterface. Note that it can also take
-	 * objects of classes implementing InheritingInterface: it makes sense, because they also can
-	 * call firstMethod().
+	 * @param first, object of a class implementing FirstInterface. Note that it can
+	 *               also take objects of classes implementing InheritingInterface:
+	 *               it makes sense, because they also can call firstMethod().
 	 */
 	public static void caller1(FirstInterface first) {
 		first.firstMethod();
 	}
 
 	/**
-	 * @param second, object of a class implementing SecondInterface. Note that it can also take
-	 * objects of classes implementing InheritingInterface: it makes sense, because they also can
-	 * call secondMethod().
+	 * @param second, object of a class implementing SecondInterface. Note that it
+	 *                can also take objects of classes implementing
+	 *                InheritingInterface: it makes sense, because they also can
+	 *                call secondMethod().
 	 */
 	public static void caller2(SecondInterface second) {
 		second.secondMethod();
 	}
 
 	/**
-	 * @param inherit, object of a class implementing InheritingInterface: it has to able to
-	 * call all the three methods.
+	 * @param inherit, object of a class implementing InheritingInterface: it has to
+	 *                 able to call all the three methods.
 	 */
 	public static void caller3(InheritingInterface inherit) {
 		inherit.thirdMethod();
@@ -39,7 +40,7 @@ public class MakingCalls {
 
 	/**
 	 * @param f, object of the class FirstClass. Note: it can also take an object of
-	 * LastClass, which extends FirstClass.
+	 *           LastClass, which extends FirstClass.
 	 */
 	public static void caller4(FirstClass f) {
 		f.aClassMethod();
@@ -47,7 +48,7 @@ public class MakingCalls {
 
 	public static void main(String[] args) {
 		InheritingAndImplementingClass inheritingAndImplementingClass = new InheritingAndImplementingClass();
-		//note how last gets implicitly upcasted everytime
+		// note how last gets implicitly upcasted everytime
 		caller1(inheritingAndImplementingClass);
 		System.out.println();
 		caller2(inheritingAndImplementingClass);
@@ -58,8 +59,8 @@ public class MakingCalls {
 		System.out.println();
 		ClassImplmentingFirstInterface firstInterfaceObject = new ClassImplmentingFirstInterface();
 		caller1(firstInterfaceObject);
-		//caller2(firstInterfaceObject);FAIL!
-		//caller3(firstInterfaceObject);FAIL!
+		// caller2(firstInterfaceObject);FAIL!
+		// caller3(firstInterfaceObject);FAIL!
 
 	}
 }
