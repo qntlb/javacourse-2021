@@ -8,7 +8,26 @@ package com.andreamazzon.session4.polymorphism.shapes;
  *
  */
 public class Triangle extends Shape {
-//your implementation of the class here
+	
+	private double basis;
+	 
+	private double height;
+
+	Triangle(double basis, double height){
+		this.basis=basis;
+		this.height=height;
+	}
+
+	/*
+	 * note the @Override annotation: if we use it, we get an error if our method is not overriding a method
+	 * of the parent class. This is useful to avoid mistakes (for example we are accidentally changing the name
+	 * of the method)
+	 */
+	@Override
+	public double computeArea() {
+		System.out.println("Computing the area of this triangle..");
+		return basis*height/2;
+	}
 
 }
 

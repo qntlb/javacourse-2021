@@ -24,7 +24,7 @@ public class ShapeAreaTest {
 		double sideOfSquare = 8;
 		double radiusOfCircle = 11;
 
-		RandomShapeGenerator generator =new RandomShapeGenerator(basisOfTriangle, heightOfTriangle,
+		RandomShapeGenerator generator = new RandomShapeGenerator(basisOfTriangle, heightOfTriangle,
 				sideOfSquare, radiusOfCircle);
 
 		Shape[] arrayOfShapes = new Shape[9];
@@ -38,8 +38,5 @@ public class ShapeAreaTest {
 			printn("The area is " + shp.computeArea());
 			printn();
 		}
-
-
 	}
-
 }
