@@ -12,8 +12,8 @@ package com.andreamazzon.session5.abstractclasses.basicexample;
  *
  */
 public class OtherClass {
-	static void callMethod(AbstractBaseClass objectOfDerivedClasses) {
+	static void callMethod(AbstractBaseClass objectOfDerivedClass) {
 		// abstractMethod is implemented in every class extending AbstractBaseClass
-		objectOfDerivedClasses.abstractMethod();
+		objectOfDerivedClass.abstractMethod();
 	}
 }

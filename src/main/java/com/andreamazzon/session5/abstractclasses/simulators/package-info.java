@@ -1,16 +1,20 @@
 /**
- * The classes in this package give a more complex example of inheritance in combination with
- * composition: an abstract class StochasticProcessSimulator is defined, whose aim is the
- * simulation of a general stochastic process. Two classes inherit from this, BinomialModelGenerator
- * and TrinomialModelGenerator. Having an abstract class StochasticProcessSimulator is nice because the
- * implementation of generateRealizations() is theoretically specific of the particular process,
- * so abstract in the base class, whereas the implementation of getRealizations() is general and given
- * in the base class, with no need to rewrite it again.
- * Note however that the implementation of generateRealizations() is the same for BinomialProcessSimulator
- * and TrinomialProcessSimulator, since it only depends on generateMovements().
- * This is actually the same for every discrete process of the same type, i.e., with
- * S(i+1)=M(i)S(i) for some process M.
- * One could then think to create another subclass of this type, extending StochasticProcessSimulator, from
- * which BinomialProcessSimulator TrinomialProcessSimulator inherit. This is a possible exercise.
+ * The code in this package gives an example of a combination of inheritance and
+ * composition. Indeed, we have an abstract class StochasticProcessSimulator
+ * which provides the implementation of some methods that can be called to to
+ * get the paths, the simulated value at a given time and the average value at
+ * given time of a general stochastic process. However, all these methods are
+ * based on the generation of the specific values of the process, given by a
+ * method generateRealizations() whose implementation cannot be given in this
+ * base class, but only in classes that extend it. For this reason, this is
+ * defined to be abstract. In particular, two classes inherit from
+ * StochasticProcessSimulator, that is, BinomialModelSimulator and
+ * TrinomialModelSimulator. In this way, we have what we want: the classes
+ * BinomialModelSimulator and TrinomialModelSimulator inheriting from
+ * StochaticProcessUser directly inherit the methods already implemented there,
+ * so that we don't have to rewrite them, and they provide the specific
+ * implementation of generateRealizations(). They do this by composition: they
+ * have a field which is an object of a class that generate pseudo random
+ * integers, which is used in the implementation of generateRealizations().
  */
 package com.andreamazzon.session5.abstractclasses.simulators;
