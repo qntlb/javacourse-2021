@@ -20,11 +20,11 @@ public class CurrencyTester {
 		System.out.println();
 
 		/*
-		 * let's have a look now at some specific, pre-implemented methods that an
-		 * object of an enum type can call
+		 * Let's have a look now at some specific, pre-implemented methods that an
+		 * object of an enum type can call.
 		 */
 
-		// let's start from ordinal():
+		// Let's start from ordinal():
 		System.out.println("The position of EURO is " + Currency.EURO.ordinal());
 		System.out.println();
 
@@ -33,7 +33,7 @@ public class CurrencyTester {
 		 * of the enum constant We go through that array in the for loop.
 		 */
 		Currency[] currencyValues = Currency.values();
-		for (Currency currency : currencyValues) {
+		for (Currency currency : currencyValues) {// look at the foreach syntax!
 			currencyDescribe.setDescribedCurrency(currency);
 			currencyDescribe.describe();
 		}
